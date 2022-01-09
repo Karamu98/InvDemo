@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95aa8ab7c23eb084ba62bed928921e26, type: 3}
+  m_Name: BronzeDagger
+  m_EditorClassIdentifier: 
+  m_UIIcon: {fileID: 21300000, guid: f0e61002322319241998007559ad6310, type: 3}
+  m_ItemName: Bronze Dagger
+  m_interactionSound: {fileID: 8300000, guid: 02e1bc0a3a05d61489f5afe2348a9ec4, type: 3}
