@@ -115,11 +115,21 @@ public class InventoryMenuController : MonoBehaviour
         int nextIDX = m_currentElementIDX;
         if (navInput.x < 0.0f)
         {
-            nextIDX = Mathf.Clamp(nextIDX - 1, 0, m_allItems.Length - 1);
+            int id = nextIDX - 1;
+            if(nextIDX == 0 || nextIDX % m_columnCount == 0)
+            {
+                id += m_columnCount;
+            }
+            nextIDX = Mathf.Clamp(id, 0, m_allItems.Length - 1);
         }
         if (navInput.x > 0.0f)
         {
-            nextIDX = Mathf.Clamp(nextIDX + 1, 0, m_allItems.Length - 1);
+            int id = nextIDX + 1;
+            if(id % m_columnCount == 0)
+            {
+                id -= m_columnCount;
+            }
+            nextIDX = Mathf.Clamp(id, 0, m_allItems.Length - 1);
         }
         if (navInput.y < 0.0f)
         {
